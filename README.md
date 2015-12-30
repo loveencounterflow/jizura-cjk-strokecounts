@@ -2,34 +2,51 @@
 
 ## jizura-cjk-strokecounts
 
-Using data from the [Leeds Corpus](http://corpus.leeds.ac.uk/list.html)
-for Chinese (PRC) and Japanese character usages, a frequency list
-compiled by [Chih-Hao Tsai](http://technology.chtsai.org/charfreq)
-and a [NodeJS module](https://github.com/mumme/smart-ranking)
-that promises to perform a reasonable ranking using a Bayesian approach,
-a little over 15,600
-characters mentioned in at least one of the above sources were given a
-ranking index, starting from #1 for the most frequent character, 的,
-to #15,677 for the least common one, 氕. As such, the ranking
-is a crude guesstimate, an approximate guide to show what the more and the less
-important characters are in each region.
+Using data from the [Leeds Corpus](http://corpus.leeds.ac.uk/list.html) for
+Chinese (PRC) and Japanese character usages, a frequency list compiled by
+[Chih-Hao Tsai](http://technology.chtsai.org/charfreq) and a [NodeJS
+module](https://github.com/mumme/smart-ranking) that promises to perform a
+reasonable ranking using a Bayesian approach, a little over 15,600 characters
+mentioned in at least one of the above sources were given a ranking index,
+starting from #1 for the most frequent character, 的, to #15,677 for the least
+common one, 氕. As such, the ranking is a crude guesstimate, an approximate guide
+to show what the more and the less important characters are in each region.
 
-> For the purpose at hand, it would have been more instructive and correct to just take
-> the frequency data for each region separately and not try to make them fit
-> into a single linear scale; this just happens to reflect the data I could
-> get from database without going back and parse those sources again.
+Each character was then labeled with one or more code to indicate regions of
+usage: `C` for the PRC, `J` for Japan, and `T` for Taiwan, following the data
+presented as a result of the Unicode IICore (International Ideographs Core,
+國際表意文字核心, 東アジアの諸国で一般に使用される漢字集合)^[`https://zh.wikipedia.org/wiki/國際表意文字核心`]
+effort.
+
+> For the purpose at hand, it would have been more instructive and correct to
+> just take the frequency data for each region separately and not try to make
+> them fit into a single linear scale; this just happens to reflect the data I
+> could get from database without going back and parse those sources again.
 
 This frequency data has been joined with a strokecount for each single character
 and a running average of that strokecount; for example, the first five
 characters 的, 人, 一, 中, and 上, have 8, 2, 1, 4, 3 strokes, respectively, and the
 average number of strokes goes down from 8.00 (= 8/1) to 3.60 (= (8+2+1+4+3)/5).
 
-This chart shows how the average strokecounts for the *n* most frequent
+The below chart shows how the average strokecounts for the *n* most frequent
 characters in each region behaves; the curves would seem to converge to 10.4
-(PRC), 11.7 (Japan), 12.42 (Taiwan), and 11.3 (overall) strokes:
+(**C** for PRC), 11.7 (**J** for Japan), 12.42 (**T** for Taiwan), and 12.7
+(**A** for overall) strokes.
+
+Having obtained the C, J, T and A curves, I was interested in whether the
+specific trends we see here are maybe artefacts of the way the data got
+prepared. One thing we can immediately say is that the humps visible in the J, T
+and A series is due to the fact that all characters have been arranged in a
+single list for all the regions, the differences merely being that A retains all
+characters whereas both J and T omit those characters for which the IICore list
+didn't indicate relevance.
+
+
 
 ![](https://github.com/loveencounterflow/jizura-cjk-strokecounts/raw/master/Screen%20Shot%202015-12-30%20at%2021.26.58.png)
 
+
+## Raw data (first 6500 lines):
 
 * C—PRC
 * J—Japan
