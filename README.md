@@ -30,9 +30,8 @@ characters 的, 人, 一, 中, and 上, have 8, 2, 1, 4, 3 strokes, respectively
 average number of strokes goes down from 8.00 (= 8/1) to 3.60 (= (8+2+1+4+3)/5).
 
 The below chart shows how the average strokecounts for the *n* most frequent
-characters in each region behaves; the curves would seem to converge to 10.4
-(**C** for PRC), 11.7 (**J** for Japan), 12.42 (**T** for Taiwan), and 12.7
-(**A** for overall) strokes.
+characters in each region behaves; the **A** curve approaches a value of 12.7
+strokes.
 
 Having obtained the C, J, T and A curves, I was interested in whether the
 specific trends we see here are maybe artefacts of the way the data got
