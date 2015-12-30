@@ -19,6 +19,9 @@ and a running average of that strokecount; for example, the first five
 characters 的, 人, 一, 中, and 上, have 8, 2, 1, 4, 3 strokes, respectively, and the
 average number of strokes goes down from 8.00 (= 8/1) to 3.60 (= (8+2+1+4+3)/5).
 
+![](./raw/master/Screen%20Shot%202015-12-30%20at%2020.12.36.png)
+
+
 * C—PRC
 * J—Japan
 * T—Taiwan
