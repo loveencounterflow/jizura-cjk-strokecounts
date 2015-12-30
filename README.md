@@ -26,7 +26,7 @@ average number of strokes goes down from 8.00 (= 8/1) to 3.60 (= (8+2+1+4+3)/5).
 
 This chart shows how the average strokecounts for the *n* most frequent
 characters in each region behaves; the curves would seem to converge to 10.4
-(PRC), 11.7 (Japan), 12.42 (Taiwan), and 11.3 (overall) strokes.
+(PRC), 11.7 (Japan), 12.42 (Taiwan), and 11.3 (overall) strokes:
 
 ![](https://github.com/loveencounterflow/jizura-cjk-strokecounts/raw/master/Screen%20Shot%202015-12-30%20at%2020.12.36.png)
 
