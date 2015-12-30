@@ -46,8 +46,8 @@ As far as the curves are realistic, they do seem to imply that characters which
 are more frequently used tend to have fewer strokes than characters that are
 less frequently used. That more frequent linguistic items are generally shorter
 than rare ones has already been observed by George Zipf: "In view of the
-evidence of the strea mof speech we  may say that the length of a word tends
-to bear an inverse relationship to its relative frequency."¹. This makes
+evidence of the stream of speech we may say that the length of a word tends
+to bear an inverse relationship to its relative frequency."¹ This makes
 intuitive sense and our data seems to support this relation for CJK characters.
 
 > ¹) George K. Zipf, *The Psycho-Biology of Language* (1935:38), quoted after
