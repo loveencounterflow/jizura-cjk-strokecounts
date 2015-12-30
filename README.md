@@ -18,10 +18,11 @@ presented as a result of the [Unicode IICore (International Ideographs Core,
 國際表意文字核心, 東アジアの諸国で一般に使用される漢字集合)](https://zh.wikipedia.org/wiki/國際表意文字核心)
 effort.
 
-> For the purpose at hand, it would have been more instructive and correct to
-> just take the frequency data for each region separately and not try to make
-> them fit into a single linear scale; this just happens to reflect the data I
-> could get from database without going back and parse those sources again.
+> For the purpose at hand, it would have been more instructive and more
+> correct to just take the frequency data for each region separately and not
+> try to make them fit into a single linear scale; the way I did it here only
+> happens to reflect what data I could get from my database without going back
+> and parse the mentioned sources again.
 
 This frequency data has been joined with a strokecount for each single character
 and a running average of that strokecount; for example, the first five
@@ -36,11 +37,32 @@ characters in each region behaves; the curves would seem to converge to 10.4
 Having obtained the C, J, T and A curves, I was interested in whether the
 specific trends we see here are maybe artefacts of the way the data got
 prepared. One thing we can immediately say is that the humps visible in the J, T
-and A series is due to the fact that all characters have been arranged in a
-single list for all the regions, the differences merely being that A retains all
+and A series are due to the fact that all characters have been arranged in a
+single list for all the regions, the difference merely being that A retains all
 characters whereas both J and T omit those characters for which the IICore list
-didn't indicate relevance.
+didn't indicate relevance. So one should bear in mind that the C, J and T
+curves are, essentially abridged versions of the A curve.
 
+As far as the curves are realistic, they do seem to imply that characters which
+are more frequently used tend to have fewer strokes than characters that are
+less frequently used. That more frequent linguistic items are generally shorter
+than rare ones has already been observed by George Zipf: "In view of the
+evidence of the strea mof speech we  may say that the length of a word tends
+to bear an inverse relationship to its relative frequency."¹. This makes
+intuitive sense and our data seems to support this relation for CJK characters.
+
+> ¹) George K. Zipf, *The Psycho-Biology of Language* (1935:38), quoted after
+> [B. Sigurd et al, *Word Length, Sentence Length and
+Frequency – Zipf Revisited*] (https://www.researchgate.net/publication/227601318_Word_length_sentence_length_and_frequency_-_Zipf_revisited)
+
+I still had lingering doubts that maybe my setup was flawed, so I thought it
+might be a good idea to throw in some control data. For this I simply took the
+data collected for the A column in the table, below, shuffled it (using an
+implementation of the Fisher-Yates algorithm), and added it as curve **Q** to
+the chart. And indeed: after some initial small-sample jittering, the average
+strokecount quickly approaches and stays close to the total average
+strokecount. While this does not prove that my frequency ranking is without
+problems, it at least does show it is very probably not random, either.
 
 
 ![](https://github.com/loveencounterflow/jizura-cjk-strokecounts/raw/master/Screen%20Shot%202015-12-30%20at%2021.26.58.png)
