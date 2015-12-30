@@ -13,9 +13,9 @@ common one, 氕. As such, the ranking is a crude guesstimate, an approximate gui
 to show what the more and the less important characters are in each region.
 
 Each character was then labeled with one or more code to indicate regions of
-usage: `C` for the PRC, `J` for Japan, and `T` for Taiwan, following the data
+usage: **C** for the PRC, **J** for Japan, and **T** for Taiwan, following the data
 presented as a result of the Unicode IICore (International Ideographs Core,
-國際表意文字核心, 東アジアの諸国で一般に使用される漢字集合)^[`https://zh.wikipedia.org/wiki/國際表意文字核心`]
+國際表意文字核心, 東アジアの諸国で一般に使用される漢字集合)[https://zh.wikipedia.org/wiki/國際表意文字核心]
 effort.
 
 > For the purpose at hand, it would have been more instructive and correct to
