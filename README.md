@@ -60,7 +60,7 @@ data collected for the A column in the table, below, shuffled it (using an
 implementation of the Fisher-Yates algorithm), and added it as curve **Q** to
 the chart. And indeed: after some initial small-sample jittering, the average
 strokecount quickly approaches and stays close to the total average
-strokecount. While this does not prove that my frequency ranking is without
+strokecount. While this does not prove that the frequency ranking is without
 problems, it at least does show it is very probably not random, either.
 
 
