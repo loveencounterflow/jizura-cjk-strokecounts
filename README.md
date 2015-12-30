@@ -2,6 +2,31 @@
 
 ## jizura-cjk-strokecounts
 
+Using data from the [Leeds Corpus](http://corpus.leeds.ac.uk/list.html)
+for Chinese (PRC) and Japanese character usages, a frequency list
+compiled by [Chih-Hao Tsai](http://technology.chtsai.org/charfreq)
+and a [NodeJS module](https://github.com/mumme/smart-ranking)
+that promises to perform a reasonable ranking using a Bayesian approach,
+a little over 15,600
+characters mentioned in at least one of the above sources were given a
+ranking index, starting from #1 for the most frequent character, 的,
+to #15,677 for the least common one, 氕. As such, the ranking
+is a crude guesstimate, an approximate guide to show what the more and the less
+important characters are in each region.
+
+This frequency data has been joined with a strokecount for each single character
+and a running average of that strokecount; for example, the first five
+characters 的, 人, 一, 中, and 上, have 8, 2, 1, 4, 3 strokes, respectively, and the
+average number of strokes goes down from 8.00 (= 8/1) to 3.60 (= (8+2+1+4+3)/5).
+
+* C—PRC
+* J—Japan
+* T—Taiwan
+* A—all
+* g—glyph
+* r—rank (most frequent first)
+* s—strokecount of glyph
+* a—average strokecount up to and including this glyph
 
 | Cg |   Cr  | Cs |   Ca  | Jg |   Jr  | Js |   Ja  | Tg |   Tr  | Ts |   Ta  | Ag |  Ar  | As |   Aa  |
 |----|-------|----|-------|----|-------|----|-------|----|-------|----|-------|----|------|----|-------|
