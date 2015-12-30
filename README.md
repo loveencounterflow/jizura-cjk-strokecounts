@@ -28,7 +28,7 @@ This chart shows how the average strokecounts for the *n* most frequent
 characters in each region behaves; the curves would seem to converge to 10.4
 (PRC), 11.7 (Japan), 12.42 (Taiwan), and 11.3 (overall) strokes:
 
-![](https://github.com/loveencounterflow/jizura-cjk-strokecounts/raw/master/Screen%20Shot%202015-12-30%20at%2020.12.36.png)
+![](https://github.com/loveencounterflow/jizura-cjk-strokecounts/raw/master/Screen%20Shot%202015-12-30%20at%2021.26.58.png)
 
 
 * C—PRC
