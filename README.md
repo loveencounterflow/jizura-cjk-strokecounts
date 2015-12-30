@@ -14,10 +14,19 @@ to #15,677 for the least common one, 氕. As such, the ranking
 is a crude guesstimate, an approximate guide to show what the more and the less
 important characters are in each region.
 
+> For the purpose at hand, it would have been more instructive and correct to just take
+> the frequency data for each region separately and not try to make them fit
+> into a single linear scale; this just happens to reflect the data I could
+> get from database without going back and parse those sources again.
+
 This frequency data has been joined with a strokecount for each single character
 and a running average of that strokecount; for example, the first five
 characters 的, 人, 一, 中, and 上, have 8, 2, 1, 4, 3 strokes, respectively, and the
 average number of strokes goes down from 8.00 (= 8/1) to 3.60 (= (8+2+1+4+3)/5).
+
+This chart shows how the average strokecounts for the *n* most frequent
+characters in each region behaves; the curves would seem to converge to 10.4
+(PRC), 11.7 (Japan), 12.42 (Taiwan), and 11.3 (overall) strokes.
 
 ![](https://github.com/loveencounterflow/jizura-cjk-strokecounts/raw/master/Screen%20Shot%202015-12-30%20at%2020.12.36.png)
 
